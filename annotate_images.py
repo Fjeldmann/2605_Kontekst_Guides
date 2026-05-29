@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import math
 import os
 
-IMAGES_DIR = r"C:\Users\olive\Documents\Fjeldmann\2601_Kontekst_Kommunesalg\images"
+IMAGES_DIR = r"C:\Users\olive\Documents\Fjeldmann\2605_Kontekst_Guides\images"
 
 TEAL = (2, 89, 81)
 GOLD = (190, 133, 19)
@@ -86,66 +86,66 @@ def process(filename, annotations, out_suffix="_ann"):
 # Per-image annotations  (lcx, lcy = label centre;  tx, ty = arrow tip)
 # ---------------------------------------------------------------------------
 
-# Trin 1 – chat lobby
+# Trin 1 – chat lobby  (933×583)
 process("chat lobby.png", [
-    {"text": "Tryk 'Inviter deltager'", "lcx": 680, "lcy": 155, "tx": 612, "ty": 225, "color": GOLD},
-    {"text": "QR-kode til borgeren",   "lcx": 190, "lcy": 410, "tx": 190, "ty": 295, "color": GOLD},
+    {"text": "Tryk 'Inviter deltager'", "lcx": 720, "lcy": 110, "tx": 590, "ty": 222, "color": GOLD},
+    {"text": "QR uden invitation",      "lcx": 168, "lcy": 455, "tx": 168, "ty": 360, "color": GOLD},
 ])
 
-# Trin 2 – invite filled name
+# Trin 2 – invite filled name  (891×555)
 process("chat invite filled name .png", [
-    {"text": "Navn",          "lcx": 450, "lcy": 235, "tx": 585, "ty": 308, "color": GOLD},
-    {"text": "Vælg sprog",    "lcx": 920, "lcy": 235, "tx": 798, "ty": 308, "color": GOLD},
-    {"text": "Bekræft",     "lcx": 1060,"lcy": 308, "tx": 895, "ty": 308, "color": GOLD},
+    {"text": "Navn",       "lcx": 450, "lcy": 190, "tx": 490, "ty": 268, "color": GOLD},
+    {"text": "Vælg sprog", "lcx": 665, "lcy": 175, "tx": 700, "ty": 268, "color": GOLD},
+    {"text": "Bekræft",    "lcx": 830, "lcy": 130, "tx": 800, "ty": 268, "color": GOLD},
 ])
 
-# Trin 3 – QR after invitation
+# Trin 3 – QR after invitation  (967×681) – modal overlay
 process("chat qr after invitation.png", [
-    {"text": "Scan QR-koden",    "lcx": 850, "lcy": 280, "tx": 698, "ty": 338, "color": GOLD},
-    {"text": "Eller kopiér link","lcx": 850, "lcy": 500, "tx": 726, "ty": 500, "color": GOLD},
+    {"text": "Scan QR-koden",       "lcx": 780, "lcy": 230, "tx": 563, "ty": 340, "color": GOLD},
+    {"text": "Klik for at kopiere", "lcx": 780, "lcy": 510, "tx": 735, "ty": 551, "color": GOLD},
 ])
 
-# Trin 4 – join page
+# Trin 4 – join page  (831×686)
 process("join page.png", [
-    {"text": "Navn og sprog er udfyldt", "lcx": 200, "lcy": 423, "tx": 362, "ty": 423, "color": GOLD},
-    {"text": "Borgeren trykker 'Join'",  "lcx": 200, "lcy": 560, "tx": 357, "ty": 560, "color": GOLD},
+    {"text": "Navn og sprog er udfyldt", "lcx": 665, "lcy": 415, "tx": 510, "ty": 397, "color": GOLD},
+    {"text": "Borgeren trykker 'Join'",  "lcx": 665, "lcy": 540, "tx": 510, "ty": 534, "color": GOLD},
 ])
 
-# Trin 5 – lobby after join
+# Trin 5 – lobby after join  (925×552)
 process("chat lobby after join.png", [
-    {"text": "Afventer godkendelse", "lcx": 580, "lcy": 155, "tx": 570, "ty": 205, "color": GOLD},
-    {"text": "Acceptér",            "lcx": 860, "lcy": 155, "tx": 806, "ty": 232, "color": GOLD},
-    {"text": "Afvis",               "lcx": 860, "lcy": 265, "tx": 840, "ty": 232, "color": (180, 50, 50)},
+    {"text": "Afventer godkendelse", "lcx": 420, "lcy": 115, "tx": 360, "ty": 202, "color": GOLD},
+    {"text": "Acceptér",             "lcx": 690, "lcy": 115, "tx": 765, "ty": 202, "color": GOLD},
+    {"text": "Afvis",                "lcx": 830, "lcy": 265, "tx": 800, "ty": 235, "color": (180, 50, 50)},
 ])
 
-# Trin 6 – lobby after accept
+# Trin 6 – lobby after accept  (929×599)
 process("chat lobby after accept.png", [
-    {"text": "Godkendt",            "lcx": 580, "lcy": 150, "tx": 375, "ty": 208, "color": GOLD},
-    {"text": "Tryk 'Start samtale'",  "lcx": 680, "lcy": 450, "tx": 472, "ty": 487, "color": GOLD},
+    {"text": "Godkendt",             "lcx": 430, "lcy": 112, "tx": 370, "ty": 205, "color": GOLD},
+    {"text": "Tryk 'Start samtale'", "lcx": 700, "lcy": 515, "tx": 449, "ty": 465, "color": GOLD},
 ])
 
-# Trin 7 – session (idle)
+# Trin 7 – session (idle)  (1247×822)
 process("chat session .png", [
-    {"text": "Tryk for at optage",    "lcx": 400, "lcy": 700, "tx": 400, "ty": 762, "color": GOLD},
-    {"text": "Eller skriv direkte",   "lcx": 850, "lcy": 700, "tx": 800, "ty": 762, "color": GOLD},
-    {"text": "Auto-afspil beskeder",  "lcx": 420, "lcy": 470, "tx": 175, "ty": 470, "color": GOLD},
+    {"text": "Tryk for at optage",         "lcx": 391, "lcy": 668, "tx": 391, "ty": 748, "color": GOLD},
+    {"text": "Skriv direkte",              "lcx": 810, "lcy": 668, "tx": 810, "ty": 748, "color": GOLD},
 ])
 
-# Trin 8 – session recording
+# Trin 8 – session recording  (1227×821)
 process("chat session recording.png", [
-    {"text": "Optager – tryk for at stoppe", "lcx": 700, "lcy": 700, "tx": 395, "ty": 762, "color": (180, 50, 50)},
+    {"text": "Optager - tryk for at stoppe", "lcx": 760, "lcy": 665, "tx": 391, "ty": 748, "color": (180, 50, 50)},
 ])
 
-# Trin 9 – session send
+# Trin 9 – session send  (1258×818)
 process("chat session send.png", [
-    {"text": "Transskriberet tekst", "lcx": 700, "lcy": 700, "tx": 640, "ty": 762, "color": GOLD},
-    {"text": "Send",                "lcx": 1100,"lcy": 700, "tx": 1185,"ty": 762, "color": GOLD},
+    {"text": "Transskriberet tekst", "lcx": 700, "lcy": 662, "tx": 790, "ty": 745, "color": GOLD},
+    {"text": "Send",                 "lcx": 1070,"lcy": 662, "tx": 1190,"ty": 745, "color": GOLD},
 ])
 
-# Trin 10 – message received
+# Trin 10 – message received  (1249×826)
 process("chat session message recieved.png", [
-    {"text": "Auto-afspil (til/fra)", "lcx": 420, "lcy": 462, "tx": 200, "ty": 462, "color": GOLD},
-    {"text": "Afspil denne besked",   "lcx": 820, "lcy": 158, "tx": 670, "ty": 158, "color": GOLD},
+    {"text": "Auto-afspil beskeder",            "lcx": 480, "lcy": 430, "tx": 52,  "ty": 480, "color": GOLD},
+    {"text": "Send stemmeoptagelser automatisk", "lcx": 600, "lcy": 555, "tx": 52,  "ty": 527, "color": GOLD},
+    {"text": "Afspil denne besked",              "lcx": 900, "lcy": 118, "tx": 672, "ty": 158, "color": GOLD},
 ])
 
 print("\nDone!")

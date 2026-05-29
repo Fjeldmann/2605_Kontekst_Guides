@@ -201,6 +201,7 @@ Teksten vises i beskedfeltet — gennemse den og tryk **send**
 Indgående beskeder kan læses op automatisk eller manuelt
 
 * **Auto-afspil beskeder** (toggle i venstre panel) — beskeder læses op automatisk, så borgeren ikke behøver at se skærmen
+* **Send stemmeoptagelser automatisk** (toggle i venstre panel) — optagelsen sendes med det samme når du stopper, uden at du skal trykke send
 * **Højtaler-ikonet** på den enkelte besked — tryk for at afspille en specifik besked manuelt
 
 ![bg right:50% contain](images/chat%20session%20message%20recieved_ann.png)
