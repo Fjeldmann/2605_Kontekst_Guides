@@ -6,12 +6,17 @@ style: |
     font-family: 'Segoe UI', sans-serif;
     background: #f5f5f5;
     color: #1a1a1a;
+    font-size: 22px;
   }
   h1, h2 {
     color: #025951 !important;
+    font-size: 1.7em;
   }
   h1 strong, h2 strong {
     color: #be8513 !important;
+  }
+  h3 {
+    font-size: 1.2em;
   }
   .step-number {
     font-size: 3em;
@@ -22,8 +27,9 @@ style: |
     margin-top: 0.5em;
   }
   li {
-    margin-bottom: 0.4em;
-    line-height: 1.5;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+    font-size: 1em;
   }
   blockquote {
     border-left: 4px solid #be8513;
@@ -62,14 +68,6 @@ style: |
 
 [Link til Chat platformen](https://kontekst.droidsagencyai.com/chat)
 
-<br><br>
-
-<div style="display:flex; gap:3%; align-items:center; max-width:280px;">
-  <img src="images/fjeldmann-logo.png" height="36" style="opacity:.85">
-  <span style="font-size:2em; color:#ccc;">/</span>
-  <img src="images/Droids_agency_site_logo.svg" height="28" style="opacity:.85">
-</div>
-
 ![bg left:38% 70%](images/kontekst-logo_v2.png)
 
 ---
@@ -89,7 +87,7 @@ AI-tolkning under møder — i realtid og på tværs af enheder.
 
 ## **Trin 1** — Start en ny session
 
-Åbn KONTEKST™ Chat og tryk på **"Inviter deltager"** for at tilføje en ny borger
+Åbn KONTEKST™ Chat og tryk på **"Tilføj deltager"** for at tilføje en ny borger
 
 * Du ser en deltagerkode og QR-kode til venstre
 * Din egen plads som vært er allerede oprettet
@@ -200,8 +198,8 @@ Teksten vises i beskedfeltet — gennemse den og tryk **send**
 
 Indgående beskeder kan læses op automatisk eller manuelt
 
-* **Auto-afspil beskeder** (toggle i venstre panel) — beskeder læses op automatisk, så borgeren ikke behøver at se skærmen
-* **Send stemmeoptagelser automatisk** (toggle i venstre panel) — optagelsen sendes med det samme når du stopper, uden at du skal trykke send
+* **Afspil automatisk** (toggle i venstre panel) — beskeder læses op automatisk, så borgeren ikke behøver at se skærmen
+* **Send automatisk** (toggle i venstre panel) — optagelsen sendes med det samme når du stopper, uden at du skal trykke send
 * **Højtaler-ikonet** på den enkelte besked — tryk for at afspille en specifik besked manuelt
 
 ![bg right:50% contain](images/chat%20session%20message%20recieved_ann.png)
