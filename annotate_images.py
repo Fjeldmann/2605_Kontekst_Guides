@@ -93,34 +93,34 @@ process("chat lobby.png", [
 
 # Trin 2
 process("chat invite filled name .png", [
-    {"text": "Navn",       "lcx": 450, "lcy": 190, "tx": 490, "ty": 283, "color": GOLD},
-    {"text": "Vælg sprog","lcx": 665, "lcy": 175, "tx": 715, "ty": 283, "color": GOLD},
-    {"text": "Bekræft",   "lcx": 830, "lcy": 130, "tx": 822, "ty": 283, "color": GOLD},
+    {"text": "Navn",       "lcx": 450, "lcy": 190, "tx": 459, "ty": 278, "color": GOLD},
+    {"text": "Vælg sprog", "lcx": 665, "lcy": 175, "tx": 635, "ty": 278, "color": GOLD},
+    {"text": "Tilføj",     "lcx": 830, "lcy": 130, "tx": 790, "ty": 278, "color": GOLD},
 ])
 
 # Trin 3
 process("chat qr after invitation.png", [
-    {"text": "Scan QR-koden",       "lcx": 750, "lcy": 220, "tx": 548, "ty": 315, "color": GOLD},
-    {"text": "Klik for at kopiere", "lcx": 750, "lcy": 530, "tx": 448, "ty": 566, "color": GOLD},
+    {"text": "Scan QR-koden",       "lcx": 750, "lcy": 220, "tx": 443, "ty": 288, "color": GOLD},
+    {"text": "Klik for at kopiere", "lcx": 750, "lcy": 530, "tx": 443, "ty": 540, "color": GOLD},
 ])
 
 # Trin 4
 process("join page.png", [
-    {"text": "Navn og sprog er udfyldt", "lcx": 590, "lcy": 415, "tx": 414, "ty": 415, "color": GOLD},
-    {"text": "Borgeren trykker Join",    "lcx": 590, "lcy": 545, "tx": 414, "ty": 516, "color": GOLD},
+    {"text": "Navn og sprog er udfyldt", "lcx": 400, "lcy": 250, "tx": 290, "ty": 358, "color": GOLD},
+    {"text": "Borgeren trykker Join",    "lcx": 400, "lcy": 565, "tx": 290, "ty": 497, "color": GOLD},
 ])
 
 # Trin 5
 process("chat lobby after join.png", [
-    {"text": "Afventer godkendelse", "lcx": 420, "lcy": 110, "tx": 370, "ty": 225, "color": GOLD},
-    {"text": "Acceptér",             "lcx": 690, "lcy": 110, "tx": 792, "ty": 230, "color": GOLD},
-    {"text": "Afvis",                "lcx": 870, "lcy": 295, "tx": 826, "ty": 230, "color": (180, 50, 50)},
+    {"text": "Afventer godkendelse", "lcx": 420, "lcy": 110, "tx": 368, "ty": 208, "color": GOLD},
+    {"text": "Acceptér",             "lcx": 690, "lcy": 110, "tx": 769, "ty": 208, "color": GOLD},
+    {"text": "Afvis",                "lcx": 870, "lcy": 295, "tx": 808, "ty": 208, "color": (180, 50, 50)},
 ])
 
 # Trin 6
 process("chat lobby after accept.png", [
-    {"text": "Godkendt",              "lcx": 430, "lcy": 108, "tx": 370, "ty": 226, "color": GOLD},
-    {"text": "Tryk Start samtale",    "lcx": 750, "lcy": 470, "tx": 583, "ty": 401, "color": GOLD},
+    {"text": "Godkendt",              "lcx": 430, "lcy": 108, "tx": 368, "ty": 208, "color": GOLD},
+    {"text": "Tryk Start samtale",    "lcx": 750, "lcy": 450, "tx": 583, "ty": 388, "color": GOLD},
 ])
 
 # Trin 7
@@ -144,7 +144,7 @@ process("chat session send.png", [
 process("chat session message recieved.png", [
     {"text": "Afspil automatisk",   "lcx": 700, "lcy": 420, "tx": 55,  "ty": 163, "color": GOLD},
     {"text": "Send automatisk",     "lcx": 700, "lcy": 580, "tx": 55,  "ty": 188, "color": GOLD},
-    {"text": "Afspil denne besked", "lcx": 900, "lcy": 115, "tx": 737, "ty": 162, "color": GOLD},
+    {"text": "Afspil denne besked", "lcx": 900, "lcy": 115, "tx": 621, "ty": 158, "color": GOLD},
 ])
 
 print("\nDone!")
